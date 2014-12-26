@@ -207,7 +207,7 @@ h5, h6       { font-weight: bolder }
         background-position: -155px 0;
     }
 	
-	.rights{
+	/*.rights{
 	-webkit-transition: all 0.7s ease;
 	transition: all 0.7s ease;
 	}
@@ -215,7 +215,7 @@ h5, h6       { font-weight: bolder }
 	header .rights:hover{
 		-webkit-transform: translate(-500px,0);
 		transform: translate(-500px,0);
-	}
+	}*/
 
     header .rights p{
         color: #454545;
