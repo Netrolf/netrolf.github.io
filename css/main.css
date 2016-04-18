@@ -107,6 +107,7 @@ h5, h6       { font-weight: bolder }
         float: left;
         overflow: hidden;
         z-index: 5000;
+        box-shadow: 2px 2px 5px #555555;
     }
 
     header .logo{
