@@ -1,0 +1,169 @@
+/*	Table of Contents
+___________________________________________________
+
+- General Content
+- Typography
+- Header & Navigation
+- Images & Media
+- Footer
+- Media Queries
+___________________________________________________ */
+
+
+/* General Content
+___________________________________________________ */
+
+.portfolio-title
+{
+	margin-top:5%;
+}
+
+.portfolio
+{
+	margin: 2% 0;
+}
+
+.portfolio-sorting
+{
+	text-transform: uppercase;	
+	font-size: 16px;
+	margin-bottom: 48px;
+}
+
+.portfolio-sorting li a 
+{
+	color: #808080;
+	text-decoration: none;
+	padding: 2px;
+	opacity : 0.5;
+}
+
+.portfolio-sorting li a:hover{opacity:1;}
+
+.portfolio-sorting li a.active
+{
+	opacity:1;
+	color: #111;
+	border-bottom: 2px solid #555;
+}
+
+.portfolio-item 
+{
+	margin-bottom: 30px;
+}
+
+/* Typography
+___________________________________________________ */
+
+body
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #111;
+}
+
+.logo
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+	color: #111;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+h1.portfolio-title
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 3em;
+	color: #000;
+}
+
+
+
+/* Header & Navigation
+___________________________________________________ */
+
+.navbar
+{
+	background-color:#fff;
+	height: 8%;
+	width: 100%;
+	box-shadow: 0px 0px 5px #888888;
+}
+
+.header-elements
+{
+    padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0;
+}
+
+.logo
+{
+	text-align: left;
+}
+
+ul.social
+{
+	list-style-type: none;
+	text-align: right;
+}
+
+ul.social li
+{
+	font-size: 1.75em;
+	display: inline;
+	padding: 0 2%;
+}
+
+ul.social li a{
+	color: #666;
+}
+
+ul.social li a:hover
+{
+	
+}
+
+ul.social li.mail a:hover{color: rgb(201, 44, 25)}
+ul.social li.linkedin a:hover{color: rgb(0,123,182)}
+ul.social li.steam a:hover{color: #171a21}
+ul.social li.spotify a:hover{color: #24cf5f}
+
+
+/* Images & Media
+___________________________________________________ */
+
+img{max-width:100%;}
+
+img:hover
+{
+	opacity:0.8;
+}
+
+/* Footer
+___________________________________________________ */
+
+p.copyright
+{
+	text-align: center;
+	color: #111;
+	font-size: 1em;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	white-space: nowrap;
+}
+
+footer
+{
+	background-color:#fff;
+	height: 8%;
+	width: 100%;
+}
+
+/* Media Queries
+___________________________________________________ */
