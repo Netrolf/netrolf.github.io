@@ -1,0 +1,752 @@
+/*	Table of Contents
+___________________________________________________
+
+- General Content
+- Typography
+- Header & Navigation
+- Images & Media
+- Footer
+- Media Queries
+___________________________________________________ */
+
+
+/* General Content
+___________________________________________________ */
+
+.portfolio-title
+{
+	margin-top:2%;
+}
+
+.portfolio
+{
+	margin: 2% 0;
+}
+
+.resume-btn
+{	
+	background-color: #111;
+    border: none;
+	border-radius: 5px;
+	
+	margin: 2% auto;
+	
+	width:17%;
+	
+	padding: 0.5%;
+	
+	text-align:center;
+	
+	box-shadow: 1px 1px 3px #888888;
+	-webkit-box-shadow:  1px 1px 3px #888888;
+    -moz-box-shadow:  1px 1px 3px #888888;
+}
+
+.resume-btn :hover
+{
+	
+}
+
+.portfolio-sorting
+{
+	text-transform: uppercase;	
+	font-size: 1.5em;
+	margin-bottom: 48px;
+}
+
+.portfolio-sorting li a 
+{
+	color: #808080;
+	text-decoration: none;
+	padding: 5px;
+	opacity : 0.5;
+	transition-duration: 0.3s;
+	outline: none;
+}
+
+.portfolio-sorting li a:hover
+{
+	opacity:1; 
+	transition-duration: 0.3s;
+}
+
+.portfolio-sorting li a.active
+{
+	opacity:1;
+	color: #111;
+	/*border-bottom: 1px solid #555;*/
+	outline: none;
+}
+
+.portfolio-item 
+{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	overflow: hidden;
+	outline: none;	
+}
+
+.shadow-box
+{
+	box-shadow: 1px 1px 3px #888888;
+	-webkit-box-shadow:  1px 1px 3px #888888;
+    -moz-box-shadow:  1px 1px 3px #888888;
+}
+
+
+/* Typography
+___________________________________________________ */
+
+body
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #111;
+	background-color: #FFF;
+}
+
+.logo
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
+	font-size: 2em;
+	color: #111;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+h1.portfolio-title
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 3em;
+	color: #000;
+}
+
+.resume-btn a
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 1.4em;
+	margin: 0 auto;
+	color: #FFF;
+	text-transform:uppercase;
+	text-decoration : none;
+	outline: none;
+}
+
+.caption-title
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 1.5em;
+	text-decoration: none;
+	text-transform: uppercase;
+	outline:none;
+	color: #FFF;
+}
+
+.caption-subtitle
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 1.2em;
+	text-decoration: none;
+	outline:none;
+	color: #FFF;
+}
+
+
+/* Header & Navigation
+___________________________________________________ */
+
+.navbar
+{
+	background-color:#fff;
+	height: 4em;
+	width: 100%;
+	box-shadow: 0px 0px 2px #888888;
+	-webkit-box-shadow:  0px 0px 2px #888888;
+    -moz-box-shadow:  0px 0px 2px #888888;
+}
+
+.header-elements
+{
+    padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0;
+}
+
+.logo
+{
+	text-align: left;
+}
+
+ul.social
+{
+	list-style-type: none;
+	text-align: right;
+}
+
+ul.social li
+{
+	font-size: 1.5em;
+	display: inline;
+	padding: 0 2%;
+}
+
+ul.social li a{
+	color: #CCC;
+	transition-duration: 0.3s;
+	outline: none;
+}
+
+ul.social li a:hover
+{
+	transition-duration: 0.3s;
+}
+
+ul.social li a:after
+{
+	opacity:1;
+	color: #CCC;
+}
+
+ul.social li.resume a:hover{color: rgb(100, 100, 100);}
+ul.social li.resume a:active{opacity:0.5;}
+
+ul.social li.mail a:hover{color: rgb(201, 44, 25)}
+ul.social li.mail a:active{opacity:0.5;}
+
+ul.social li.linkedin a:hover{color: rgb(0,123,182)}
+ul.social li.linkedin a:active{opacity:0.5;}
+
+ul.social li.steam a:hover{color: #171a21}
+ul.social li.steam a:active{opacity:0.5;}
+
+ul.social li.spotify a:hover{color: #24cf5f}
+ul.social li.spotify a:active{opacity:0.5;}
+
+
+
+/* Images & Media
+___________________________________________________ */
+
+.portfolio-item img
+{
+
+	max-width:100%;
+	max-height:100%;
+	
+	transition-duration: 0.8s;
+	outline: none;
+	
+	position:relative;
+}
+
+.portfolio-item img:hover
+{
+	
+	transform: scale(1.2);
+	-webkit-transform:scale(1.2,1.2);
+	-moz-transform:scale(1.2,1.2);
+	-ms-transform:scale(1.2,1.2);
+	-o-transform:scale(1.2,1.2);
+	
+	overflow:hidden;
+	
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.5s;
+}
+
+.portfolio-item img:active
+{
+	outline: none;
+}
+
+
+/* Captions */
+
+.caption-box
+{
+	background-color: rgba(0,0,0,0.82);
+	opacity:0;
+	
+	pointer-events: none;
+	
+	position: absolute;
+	
+	top:5%;
+	left:3.9%;
+	
+	width: 92.3%;
+	height: 90%;
+	
+	max-width:100%;
+	max-height:100%;
+	
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.5s;
+	
+	overflow:hidden;
+}
+
+.caption-text
+{	
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.7s;
+	
+	top: 28%;
+	
+	width: 90%;
+    margin: 0 auto; 
+	
+	opacity: 1;
+	
+	margin-left:5%;
+	margin-right:5%;
+	
+	text-align:center;
+	
+	-moz-transform: translateX(-400px);
+    -o-transform: translateX(-400px);
+    -webkit-transform: translateX(-400px);
+    transform: translateX(-400px);
+	
+	position: absolute;
+}
+
+.caption-title
+{
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding: 3%;
+}
+
+
+.portfolio-item img:hover + .caption-box
+{
+	
+	opacity: 1;
+	
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.3s;
+}
+
+.portfolio-item img:hover + .caption-box .caption-text
+{
+	-moz-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+	
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.3s;
+	
+	opacity:1;
+	
+	transition-delay: 0.2s;
+}
+
+/* Footer
+___________________________________________________ */
+
+p.copyright
+{
+	text-align: center;
+	color: #111;
+	font-size: 1em;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	white-space: nowrap;
+}
+
+footer
+{
+	height: 8%;
+	width: 100%;
+	/*background-color:#fff;
+	box-shadow: 0px 0px 5px #888888;*/
+}
+
+/* Media Queries
+___________________________________________________ */
+
+@media (min-width: 0px) 
+{
+	
+	.navbar
+	{
+		background-color:#fff;
+		height: 10%;
+		width: 100%;
+		box-shadow: 0px 0px 3px #888888;
+	}
+	
+	.header-elements
+	{
+		padding-top: 3%;
+		padding-bottom: 3%;
+		padding-left: 2%;
+		padding-right: 2%;
+		margin: 0;
+	}
+	
+	.logo
+	{
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 200;
+		font-size: 2.2em;
+		color: #111;
+		text-decoration: none;
+		text-align : center;
+		text-transform: uppercase;
+		margin: 0;
+		margin-bottom:1%;
+	}
+	
+	ul.social
+	{
+		list-style-type: none;
+		text-align: center;
+		margin-top: 0;
+	}
+
+	ul.social li
+	{
+		font-size: 1.4em;
+		display: inline;
+		padding: 0 6%;
+	}
+	
+	h1.portfolio-title
+	{
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 400;
+		font-size: 2em;
+		color: #000;
+		text-align : center;
+	}
+	
+	.resume-btn
+	{
+		display:none;
+	}
+
+	
+	.portfolio-sorting
+	{
+		text-transform: uppercase;	
+		font-size: 1.5em;
+		margin-bottom: 48px;
+	}
+
+	.portfolio-sorting li a 
+	{
+		color: #000;
+		text-decoration: none;
+		padding: 10px;
+		opacity : 0.5;
+	}
+	
+	.portfolio-sorting li a.active
+	{
+		opacity:1;
+		color: #111;
+		border-bottom: 0px solid #555;
+	}
+	
+	/*.shadow-box
+	{
+		
+	}*/
+	
+	.caption-box
+	{
+		display:none;
+	}
+	
+	p.copyright
+	{
+		text-align: center;
+		color: #111;
+		font-size: 1em;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		white-space: nowrap;
+	}
+}
+
+@media (min-width: 641px) 
+{
+	
+	.navbar
+	{
+		background-color:#783;
+		height: 5%;
+		width: 100%;
+		box-shadow: 0px 0px 3px #888888;
+	}
+	
+	.header-elements
+	{
+		padding-top: 5%;
+		padding-bottom: 5%;
+		padding-left: 2%;
+		padding-right: 2%;
+		margin: 0;
+	}
+	
+	.logo
+	{
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 200;
+		font-size: 2.2em;
+		color: #111;
+		text-decoration: none;
+		text-align : center;
+		text-transform: uppercase;
+		margin: 0;
+	}
+	
+	ul.social
+	{
+		list-style-type: none;
+		text-align: center;
+		margin-top: 0;
+	}
+
+	ul.social li
+	{
+		font-size: 1.4em;
+		display: inline;
+		padding: 0 6%;
+	}
+	
+	h1.portfolio-title
+	{
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 400;
+		font-size: 2em;
+		color: #000;
+		text-align : center;
+	}
+	
+	.resume-btn
+	{
+		display:none;
+		/*
+		background-color: #111;
+		border: none;
+		border-radius: 5px;
+		
+		margin: 5% auto;
+		
+		width:42%;
+		
+		padding: 1.5%;
+		
+		text-align:center;
+		
+		box-shadow: 1px 1px 3px #888888;
+		-webkit-box-shadow:  1px 1px 3px #888888;
+		-moz-box-shadow:  1px 1px 3px #888888;*/
+	}
+	
+	/*.resume-btn a
+	{
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 400;
+		font-size: 0.8em;
+		color: #fff;
+		text-align : center;
+	}*/
+	
+	.portfolio-sorting
+	{
+		text-transform: uppercase;	
+		font-size: 1.5em;
+		margin-bottom: 48px;
+	}
+
+	.portfolio-sorting li a 
+	{
+		color: #000;
+		text-decoration: none;
+		padding: 10px;
+		opacity : 0.5;
+	}
+	
+	.portfolio-sorting li a.active
+	{
+		opacity:1;
+		color: #111;
+		border-bottom: 0px solid #555;
+	}
+	
+	p.copyright
+	{
+		text-align: center;
+		color: #111;
+		font-size: 1em;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		white-space: nowrap;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Larger than mobile
+@media (max-width: 481px) 
+{
+	.header-elements
+	{
+		padding-top: 5%;
+		padding-bottom: 5%;
+		padding-left: 2%;
+		padding-right: 2%;
+		margin: 0;
+	}
+	
+	.logo
+	{
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 400;
+		font-size: 2.5em;
+		color: #111;
+		text-decoration: none;
+		text-align : center;
+		text-transform: uppercase;
+		margin: 0;
+	}
+	
+	h1.portfolio-title
+	{
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 400;
+		font-size: 2em;
+		color: #000;
+		text-align : center;
+	}
+	
+		ul.social
+	{
+		list-style-type: none;
+		text-align: center;
+		margin: 0;
+	}
+	
+		ul.social li
+	{
+		font-size: 1em;
+		display: inline;
+		text-align: center;
+		padding: 0 0%;
+	}
+	
+	.portfolio-sorting
+	{
+		text-transform: uppercase;	
+		font-size: 1em;
+		margin-bottom: 48px;
+	}
+
+	.portfolio-sorting li a 
+	{
+		color: #000;
+		text-decoration: none;
+		padding: 3px;
+		opacity : 0.5;
+	}
+	
+	.portfolio-sorting li a.active
+{
+	opacity:1;
+	color: #111;
+	border-bottom: 0px solid #555;
+}
+
+
+	p.copyright
+	{
+		text-align: center;
+		color: #111;
+		font-size: 0.8em;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		white-space: nowrap;
+	}
+}
+
+
+
+@media (max-width: 500px) 
+{
+	.navbar
+	{
+		background-color:#fff;
+		height: 10%;
+		width: 100%;
+		box-shadow: 0px 0px 3px #888888;
+	}
+		
+		.logo
+		{
+			font-family: 'Source Sans Pro', sans-serif;
+			font-weight: 200;
+			font-size: 2em;
+			color: #111;
+			text-decoration: none;
+			text-align : center;
+			text-transform: uppercase;
+			margin: 0;
+		}
+
+		h1.portfolio-title
+		{
+			font-family: 'Source Sans Pro', sans-serif;
+			font-weight: 400;
+			font-size: 1.5em;
+			color: #000;
+			margin: 0px;
+		}
+		
+		ul.social
+		{
+			list-style-type: none;
+			text-align: center;
+			margin: 0;
+		}
+
+		ul.social li
+		{
+			font-size: 1.4em;
+			display: inline;
+			padding: 0 6%;
+		}
+} */

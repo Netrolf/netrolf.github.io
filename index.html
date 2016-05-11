@@ -24,7 +24,6 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link href="css/hover.css" rel="stylesheet" media="all">
 
-		
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -45,11 +44,11 @@
 					<h1 class="logo col-md-4 col-sm-4 col-xs-12 header-elements">FLORENT MAILLARD</h1>
 					
 					<ul class="social col-md-8 col-sm-8 col-xs-12 header-elements list-inline">
-						<li class="resume"><a href="work/files/florent.maillard.cv.fr.pdf" target="_blank"><i class="fa fa-file-o"></i></a></li>
-						<li class="mail"><a href="mailto:fmaillard.pro@gmail.com" target="_blank"><i class="fa fa-envelope fa-lg"></i></a></li>
-						<li class="linkedin"><a href="https://ca.linkedin.com/in/flmaillard" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
-						<!--<li class="steam"><a href="#" target="_blank"><i class="fa fa-steam fa-lg"></i></a></li>-->
-						<li class="spotify"><a href="https://open.spotify.com/user/netrolf" target="_blank"><i class="fa fa-spotify fa-lg"></i></a></li>	 
+						<li class="resume"><a href="work/files/florent.maillard.cv.fr.pdf" target="_blank" title="CV"><i class="fa fa-file-o"></i></a></li>
+						<li class="mail"><a href="mailto:fmaillard.pro@gmail.com" target="_blank" title="e-mail"><i class="fa fa-envelope fa-lg"></i></a></li>
+						<li class="linkedin"><a href="https://ca.linkedin.com/in/flmaillard" target="_blank" title="Profil Linkedin"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+						<!--<li class="steam"><a href="#" target="_blank"><i class="fa fa-steam fa-lg" title="On joue ensemble ?"></i></a></li>-->
+						<li class="spotify"><a href="https://open.spotify.com/user/netrolf" target="_blank" title="Ce que j'écoute."><i class="fa fa-spotify fa-lg"></i></a></li>	 
 					</ul>
 					
 				</div>
@@ -59,8 +58,16 @@
 		
 		<!--FIN HEADER--------------------------------------------------->
 		
+		<!-- BIO -->
+
 		<!--PORTFOLIO---------------------------------------------------->
-		<h1 class="text-center portfolio-title">PORTFOLIO</h1>
+			<h1 class="text-center portfolio-title">PORTFOLIO</h1>
+		<!-- CV -->
+		
+		<div class="resume-btn">
+			<a href="work/files/florent.maillard.cv.fr.pdf" target="_blank">Télécharger mon CV</a>
+		</div>
+		
 		<!--FILTRES-->
 		<section class="portfolio">
 			<div class="container">
@@ -80,220 +87,399 @@
 					
 						<!--Bandsmith-->
 						<li class="col-md-4 col-sm-4 col-xs-12" data-groups='["game"]'>
-							<figure class="portfolio-item">
-								<a rel="bandsmith" href="work/images/bandsmith/bandsmith_pres_main.jpg" class="swipebox"  title="Conception d'un jeu pour appareils mobiles.">
-									<img src="work/sqr/bandsmith-sqr.jpg" alt="Item 1" class="img-responsive">
-								</a>
-							<!--Gallerie-->
-								<a rel="bandsmith" href="work/images/bandsmith/bandsmith_pres_menu.jpg" class="swipebox"  title="Menu Principal."></a>
-								<a rel="bandsmith" href="work/images/bandsmith/bandsmith_shop.jpg" class="swipebox"  title="Menu d'achat d'équipement."></a>								
-								<a rel="bandsmith" href="work/images/bandsmith/bandsmith_recrutement.jpg" class="swipebox"  title="Menu de Recrutement des musiciens."></a>
-								<a rel="bandsmith" href="work/images/bandsmith/bandsmith_persos.jpg" class="swipebox"  title="Illustrations : Musiciens"></a>
-								<a rel="bandsmith" href="work/images/bandsmith/bandsmith_basse.jpg" class="swipebox"  title="Illustration : Yamaha BB414 RW."></a>
-								<a rel="bandsmith" href="work/images/bandsmith/bandsmith_guitare.jpg" class="swipebox"  title="Illustration : Yamaha Pacifica."></a>
-							</figure>
+							<div class="shadow-box">
+								<figure class="portfolio-item">
+									<a rel="bandsmith" href="work/images/bandsmith/bandsmith_pres_main.jpg" class="swipebox"  title="">
+										<img id="preview" src="work/sqr/bandsmith-sqr.jpg" alt="Item 1" class="img-responsive">		
+										<!-- Caption -->
+										<div id="caption-switch" class="caption-box">
+											<span class="caption-text">
+												<h3 class="caption-title">Bandsmith</h3>
+												<p class="caption-subtitle"> Concept de jeu pour appareils mobiles.</p>
+											</span>
+										</div>
+										<!---->
+									</a>
+								<!--Gallerie-->
+									<a rel="bandsmith" href="work/images/bandsmith/bandsmith_pres_menu.jpg" class="swipebox"  title="Menu Principal."></a>
+									<a rel="bandsmith" href="work/images/bandsmith/bandsmith_shop.jpg" class="swipebox"  title="Menu d'achat d'équipement."></a>								
+									<a rel="bandsmith" href="work/images/bandsmith/bandsmith_recrutement.jpg" class="swipebox"  title="Menu de Recrutement des musiciens."></a>
+									<a rel="bandsmith" href="work/images/bandsmith/bandsmith_persos.jpg" class="swipebox"  title="Illustrations : Musiciens"></a>
+									<a rel="bandsmith" href="work/images/bandsmith/bandsmith_basse.jpg" class="swipebox"  title="Illustration : Yamaha BB414 RW."></a>
+									<a rel="bandsmith" href="work/images/bandsmith/bandsmith_guitare.jpg" class="swipebox"  title="Illustration : Yamaha Pacifica."></a>
+								</figure>
+							</div>
 						</li>
-					
+						
 						<!--IMP-->
 						<li class="col-md-4 col-sm-4 col-xs-12" data-groups='["graph"]'>
-							<figure class="portfolio-item">
-								<a rel="imp" href="work/images/imp/imp2.jpg" class="swipebox"  title="Illustration pour T-shirt.">
-									<img src="work/sqr/imp-sqr.jpg" alt="Item 1" class="img-responsive">
-								</a>
-							<!--Gallerie-->
-								<a rel="imp" href="work/images/imp/imp1.jpg" class="swipebox"  title="Illustration vectorielle"></a>
-							</figure>
+							<div class="shadow-box">
+								<figure class="portfolio-item">
+									<a rel="bandsmith" href="work/images/imp/imp2.jpg" class="swipebox"  title="">
+										<img id="preview" src="work/sqr/imp-sqr.jpg" alt="Item 1" class="img-responsive">		
+										<!-- Caption -->
+										<div id="caption-switch" class="caption-box">
+											<span class="caption-text">
+												<h3 class="caption-title">Le Diablotin</h3>
+												<p class="caption-subtitle">Illustration vectorielle pour T-shirt. </p>
+											</span>
+										</div>
+										<!---->
+									</a>
+								<!--Gallerie-->
+									<a rel="imp" href="work/images/imp/imp1.jpg" class="swipebox"  title="Illustration vectorielle"></a>
+								</figure>
+							</div>
 						</li>
 						
 						<!--SR1-->
-						<li class="col-md-4 col-sm-4 col-xs-12" data-groups='["3d", "game"]'>
-							<figure class="portfolio-item">
-								<a rel="sr1" href="work/images/sr1/sr1-screen2.jpg" class="swipebox"  title="Mod pour le jeu SkyRogue">
-									<img src="work/sqr/sr1-sqr.jpg" alt="Item 1" class="img-responsive">
-								</a>
-							<!--Gallerie-->
-								<a rel="sr1" href="work/images/sr1/sr1-screen1.jpg" class="swipebox"  title="Buzzard - Screen Ingame"></a>
-								<a rel="sr1" href="work/images/sr1/sr1-view.jpg" class="swipebox"  title="Buzzard - Modèle 3D"></a>
-								<a rel="sr1" href="work/images/sr1/sr1-side.jpg" class="swipebox"  title="Buzzard - Modèle 3D sideview"></a>
-							</figure>
+						<li class="col-md-4 col-sm-4 col-xs-12" data-groups='["3D" , "game"]'>
+							<div class="shadow-box">
+								<figure class="portfolio-item">
+									<a rel="bandsmith" href="work/images/sr1/sr1-screen2.jpg" class="swipebox"  title="">
+										<img id="preview" src="work/sqr/sr1-sqr.jpg" alt="Item 1" class="img-responsive">		
+										<!-- Caption -->
+										<div id="caption-switch" class="caption-box">
+											<span class="caption-text">
+												<h3 class="caption-title">Buzzard</h3>
+												<p class="caption-subtitle">Mod pour le jeu SkyRogue.</p>
+											</span>
+										</div>
+										<!---->
+									</a>
+								<!--Gallerie-->
+									<a rel="sr1" href="work/images/sr1/sr1-screen1.jpg" class="swipebox"  title="Buzzard - Screen Ingame"></a>
+									<a rel="sr1" href="work/images/sr1/sr1-view.jpg" class="swipebox"  title="Buzzard - Modèle 3D"></a>
+									<a rel="sr1" href="work/images/sr1/sr1-side.jpg" class="swipebox"  title="Buzzard - Modèle 3D sideview"></a>
+								</figure>
+							</div>
 						</li>
 						
-						<!--quentin-->
+						<!--Quentin-->
 						<li class="col-md-4 col-sm-4 col-xs-12" data-groups='["graph"]'>
-							<figure class="portfolio-item">
-								<a rel="quentin" href="work/images/quentin/intact1.jpg" class="swipebox"  title="Conception de l'identité visuelle du court métrage.">
-									<img src="work/sqr/intact-sqr.jpg" alt="Item 1" class="img-responsive">
-								</a>
-							<!--Gallerie-->
+							<div class="shadow-box">
+								<figure class="portfolio-item">
+									<a rel="bandsmith" href="work/images/quentin/intact1.jpg" class="swipebox"  title="">
+										<img id="preview" src="work/sqr/intact-sqr.jpg" alt="Item 1" class="img-responsive">		
+										<!-- Caption -->
+										<div id="caption-switch" class="caption-box">
+											<span class="caption-text">
+												<h3 class="caption-title">Intact et Le Temps d'un Repas</h3>
+												<p class="caption-subtitle">Création de l'identité visuelle<br>de deux courts métrages sélectionnés<br>au short corner film du festival de Cannes.</p>
+											</span>
+										</div>
+										<!---->
+									</a>
+								<!--Gallerie-->
 								<a rel="quentin" href="work/images/quentin/intact2.jpg" class="swipebox"  title="Affiche"></a>
-								<a rel="quentin" href="work/images/quentin/intact3.jpg" class="swipebox"  title="Le passage de la nuit."></a>
-								<a rel="quentin" href="work/images/quentin/ltdr.jpg" class="swipebox"  title="Kafka sur le rivage."></a>
-							</figure>
+								<a rel="quentin" href="work/images/quentin/intact3.jpg" class="swipebox"  title="Variante."></a>
+								<a rel="quentin" href="work/images/quentin/ltdr.jpg" class="swipebox"  title="Affiche du court métrage Le Temps d'un Repas."></a>
+								</figure>
+							</div>
 						</li>
+						
 						
 						<!--reactif-->
 						<li class="col-md-4 col-sm-4 col-xs-12" data-groups='["graph", "motion"]'>
-							<figure class="portfolio-item">
-								<a rel="reactif" href="work/images/reactif/emiettez.swf" target="_blank"  title="Illustration interactive.">
-									<img src="work/sqr/reactif-sqr.jpg" alt="Item 1" class="img-responsive">
-								</a>
-							<!--Gallerie-->
-
-							</figure>
+						<div class="shadow-box">
+								<figure class="portfolio-item">
+									<a rel="reactif" href="work/images/reactif/emiettez.swf" target="_blank"  title="">
+										<img id="preview" src="work/sqr/reactif-sqr.jpg" alt="Item 1" class="img-responsive">
+										<!-- Caption -->
+										<div id="caption-switch" class="caption-box">
+											<span class="caption-text">
+												<h3 class="caption-title">Émiettez</h3>
+												<p class="caption-subtitle">Illustration interactive d'un verbe.<br>(Flash ActionScript3.0)</p>
+											</span>
+										</div>
+										<!---->
+									</a>
+								</figure>
+							</div>
 						</li>
 						
 						<!--revolver-->
 						<li class="col-md-4 col-sm-4 col-xs-12" data-groups='["3d"]'>
-							<figure class="portfolio-item">
-								<a rel="revolver" href="work/images/revolver/Revolver.jpg" class="swipebox"  title="Modélisation High Poly d'une arme de poing.">
-									<img src="work/sqr/revolver-sqr.jpg" alt="Item 1" class="img-responsive">
-								</a>
-							<!--Gallerie-->
-								<a rel="revolver" href="work/images/revolver/Revolver - L.jpg" class="swipebox"  title="Left View"></a>								
-								<a rel="revolver" href="work/images/revolver/Revolver - R.jpg" class="swipebox"  title="Right View"></a>
-							</figure>
+							<div class="shadow-box">
+								<figure class="portfolio-item">
+									<a rel="revolver" href="work/images/revolver/Revolver.jpg" class="swipebox"  title="">
+										<img id="preview" src="work/sqr/revolver-sqr.jpg" alt="Item 1" class="img-responsive">
+										
+										<!-- Caption -->
+										<div id="caption-switch" class="caption-box">
+											<span class="caption-text">
+												<h3 class="caption-title">Revolver</h3>
+												<p class="caption-subtitle">Modélisation High Poly.<br>(3dsmax et Zbrush)</p>
+											</span>
+										</div>
+										<!---->
+										
+									</a>
+									<!--Gallerie-->
+									<a rel="revolver" href="work/images/revolver/Revolver - L.jpg" class="swipebox"  title="Left View"></a>								
+									<a rel="revolver" href="work/images/revolver/Revolver - R.jpg" class="swipebox"  title="Right View"></a>
+								</figure>
+							</div>
 						</li>
 						
 						<!--SR2-->
 						<li class="col-md-4 col-sm-4 col-xs-12" data-groups='["3d", "game"]'>
-							<figure class="portfolio-item">
-								<a rel="sr2" href="http://steamcommunity.com/sharedfiles/filedetails/?id=503137183" target="_blank" title="X-29 : Mod pour Skyrogue.">
-									<img src="work/sqr/sr2-sqr.jpg" alt="Item 1" class="img-responsive">
+							<div class="shadow-box">
+								<figure class="portfolio-item">
+									<a rel="sr2" href="http://steamcommunity.com/sharedfiles/filedetails/?id=503137183" target="_blank" title="X-29 : Mod pour Skyrogue.">
+										<img id="preview" src="work/sqr/sr2-sqr.jpg" alt="Item 1" class="img-responsive">
+									<!-- Caption -->
+										<div id="caption-switch" class="caption-box">
+											<span class="caption-text">
+												<h3 class="caption-title">X-29</h3>
+												<p class="caption-subtitle">Modélisation et importation d'un modèle<br>dans le workshop du jeu SkyRogue.</p>
+											</span>
+										</div>
+									<!---->
 								</a>
 							<!--Gallerie-->
-								<a rel="sr2" href="work/images/sr2/sr2-2.png" class="swipebox"  title="Buzzard - Screen Ingame"></a>
-								<a rel="sr2" href="work/images/sr2/sr2-view.png" class="swipebox"  title="Buzzard - Modèle 3D"></a>
-								<a rel="sr2" href="work/images/sr2/sr2-side.png" class="swipebox"  title="Buzzard - Modèle 3D sideview"></a>
-							</figure>
+									<a rel="sr2" href="work/images/sr2/sr2-2.png" class="swipebox"  title="Buzzard - Screen Ingame"></a>
+									<a rel="sr2" href="work/images/sr2/sr2-view.png" class="swipebox"  title="Buzzard - Modèle 3D"></a>
+									<a rel="sr2" href="work/images/sr2/sr2-side.png" class="swipebox"  title="Buzzard - Modèle 3D sideview"></a>
+								</figure>
+							</div>
 						</li>
 						
 						<!--Ludicrous-->
 						<li class="col-md-4 col-sm-4 col-xs-12" data-groups='["game"]'>
-							<figure class="portfolio-item">
-								<a rel="ludicrous" href="work/images/ludicrous/ludi - overview.jpg" class="swipebox"  title="Conception d'un prototype de Runner 2D en 2 mois seul.">
-									<img src="work/sqr/ludicrous-sqr.jpg" alt="Item 1" class="img-responsive">
-								</a>
-							<!--Gallerie-->
-								<a rel="ludicrous" href="work/images/ludicrous/Main.png" class="swipebox"  title="Décor principal."></a>								
-								<a rel="ludicrous" href="work/images/ludicrous/ludi - attack.gif" class="swipebox"  title="Animation d'attaque."></a>
-								<a rel="ludicrous" href="work/images/ludicrous/ludi - course.gif" class="swipebox"  title="Animation de course."></a>
-								<a rel="ludicrous" href="work/images/ludicrous/ludi - torche.gif" class="swipebox"  title="Animation d'un élément de décor."></a>
-							</figure>
+							<div class="shadow-box">
+								<figure class="portfolio-item">
+									<a rel="ludicrous" href="work/images/ludicrous/ludi - overview.jpg" class="swipebox"  title="Conception d'un prototype de Runner 2D en 2 mois seul.">
+										<img id="preview" src="work/sqr/ludicrous-sqr.jpg" alt="Item 1" class="img-responsive">
+										<!-- Caption -->
+											<div id="caption-switch" class="caption-box">
+												<span class="caption-text">
+													<h3 class="caption-title">Ludicrous</h3>
+													<p class="caption-subtitle">Prototype de Runner 2D réalisé seul <br> en deux mois de temps.</p>
+												</span>
+											</div>
+										<!---->
+									</a>
+								<!--Gallerie-->
+									<a rel="ludicrous" href="work/images/ludicrous/Main.png" class="swipebox"  title="Décor principal."></a>								
+									<a rel="ludicrous" href="work/images/ludicrous/ludi - attack.gif" class="swipebox"  title="Animation d'attaque."></a>
+									<a rel="ludicrous" href="work/images/ludicrous/ludi - course.gif" class="swipebox"  title="Animation de course."></a>
+									<a rel="ludicrous" href="work/images/ludicrous/ludi - torche.gif" class="swipebox"  title="Animation d'un élément de décor."></a>
+								</figure>
+							</div>
 						</li>
 						
 						<!--MAN-->
 						<li class="col-md-4 col-sm-4 col-xs-12" data-groups='["graph", "motion"]'>
-							<figure class="portfolio-item">
-								<a rel="man" href="work/images/tiji/mini-ateliers.jpg" class="swipebox"  title="Conception du logotype de l'émission éponyme.">
-									<img src="work/sqr/man-sqr.jpg" alt="Item 1" class="img-responsive">
-								</a>
-							<!--Gallerie-->
-								<a rel="man" href="work/images/tiji/mini-ateliers-tv.jpg" class="swipebox"  title="Affiche"></a>
-							</figure>
+							<div class="shadow-box">
+								<figure class="portfolio-item">
+									<a rel="man" href="work/images/tiji/mini-ateliers.jpg" class="swipebox"  title="Conception du logotype de l'émission éponyme.">
+										<img id="preview" src="work/sqr/man-sqr.jpg" alt="Item 1" class="img-responsive">	
+										<!-- Caption -->
+											<div id="caption-switch" class="caption-box">
+												<span class="caption-text">
+													<h3 class="caption-title">Les mini ateliers de noël</h3>
+													<p class="caption-subtitle">Conception du logotype de l'émission<br>diffusée sur la chaîne du Père Noël.</p>
+												</span>
+											</div>
+										<!---->
+									</a>
+								<!--Gallerie-->
+									<a rel="man" href="work/images/tiji/mini-ateliers-tv.jpg" class="swipebox"  title="Affiche"></a>
+								</figure>
+							</div>
 						</li>
 						
 						<!--TLF-->
 						<li class="col-md-4 col-sm-4 col-xs-12" data-groups='["motion"]'>
-							<figure class="portfolio-item">
-								<a class="swipebox-video" rel="google" href="https://drive.google.com/file/d/0By0b5WbnlBKnQWlFUzBXcmcyRzg/view" target="_blank"  title="Illustration interactive.">
-									<img src="work/sqr/tlf-sqr.jpg" alt="Item 1" class="img-responsive">
-								</a>
-							<!--Gallerie-->
-							</figure>
+							<div class="shadow-box">						
+								<figure class="portfolio-item">
+									<a class="swipebox-video" rel="google" href="https://drive.google.com/file/d/0By0b5WbnlBKnQWlFUzBXcmcyRzg/view" target="_blank"  title="">
+										<img id="preview" src="work/sqr/tlf-sqr.jpg" alt="Item 1" class="img-responsive">
+											<!-- Caption -->
+											<div id="caption-switch" class="caption-box">
+												<span class="caption-text">
+													<h3 class="caption-title">Top la Forme</h3>
+													<p class="caption-subtitle">Réalisation de l'introduction d'un programme<br>diffusé sur la chaîne de télévision TiJi.</p>
+												</span>
+											</div>
+										<!---->
+									</a>
+								</figure>
+							</div>
 						</li>
 						
 						<!--Grunt-->
 						<li class="col-md-4 col-sm-4 col-xs-12" data-groups='["3d"]'>
-							<figure class="portfolio-item">
-								<a rel="grunt" href="work/images/grunt/grunt.jpg" class="swipebox"  title="Création d'un buste de personnage via Zbrush.">
-									<img src="work/sqr/grunt-sqr.jpg" alt="Item 1" class="img-responsive">
-								</a>
-								<!--Gallerie-->
-								<a rel="grunt" href="work/images/grunt/sculpt1.jpg" class="swipebox"  title=""></a>
-								<a rel="grunt" href="work/images/grunt/sculpt2.jpg" class="swipebox"  title=""></a>
-								<a rel="grunt" href="work/images/grunt/grunt.gif" class="swipebox"  title=""></a>
-							</figure>
+							<div class="shadow-box">
+								<figure class="portfolio-item">
+									<a rel="grunt" href="work/images/grunt/grunt.jpg" class="swipebox"  title="">
+										<img id="preview" src="work/sqr/grunt-sqr.jpg" alt="Item 1" class="img-responsive">
+										<!-- Caption -->
+											<div id="caption-switch" class="caption-box">
+												<span class="caption-text">
+													<h3 class="caption-title">Grunt</h3>
+													<p class="caption-subtitle">Sculpt d'un personnage à partir d'un buste.<br>(Zbrush)</p>
+												</span>
+											</div>
+										<!---->
+									</a>
+									<!--Gallerie-->
+									<a rel="grunt" href="work/images/grunt/sculpt1.jpg" class="swipebox"  title=""></a>
+									<a rel="grunt" href="work/images/grunt/sculpt2.jpg" class="swipebox"  title=""></a>
+									<a rel="grunt" href="work/images/grunt/grunt.gif" class="swipebox"  title=""></a>
+								</figure>
+							</div>
 						</li>
 						
 						<!--Saturn-->
 						<li class="col-md-4 col-sm-4 col-xs-12" data-groups='["graph"]'>
-							<figure class="portfolio-item">
-								<a rel="saturn" href="work/sqr/case-sqr.jpg" class="swipebox"  title="Design d'une coque pour smartphone.">
-									<img src="work/sqr/case-sqr.jpg" alt="Item 1" class="img-responsive">
-								</a>
-								<!--Gallerie-->
-								<a rel="saturn" href="work/images/saturn/saturn.jpg" class="swipebox"  title=""></a>
-							</figure>
+							<div class="shadow-box">
+								<figure class="portfolio-item">
+									<a rel="saturn" href="work/sqr/case-sqr.jpg" class="swipebox"  title="">
+										<img id="preview" src="work/sqr/case-sqr.jpg" alt="Item 1" class="img-responsive">
+										<!-- Caption -->
+											<div id="caption-switch" class="caption-box">
+												<span class="caption-text">
+													<h3 class="caption-title">Saturn</h3>
+													<p class="caption-subtitle">Conception d'une illustration pour coque de smartphone.</p>
+												</span>
+											</div>
+										<!---->
+									</a>
+									<!--Gallerie-->
+									<a rel="saturn" href="work/images/saturn/saturn.jpg" class="swipebox"  title=""></a>
+								</figure>
+							</div>							
 						</li>
 						
 						<!--Ali-->
 						<li class="col-md-4 col-sm-4 col-xs-12" data-groups='["graph"]'>
-							<figure class="portfolio-item">
-								<a rel="ali" href="work/images/ali/ali-mes.jpg" class="swipebox"  title="Exercice d'illustration de couverture.">
-									<img src="work/sqr/ali-sqr.jpg" alt="Item 1" class="img-responsive">
-								</a>
-							<!--Gallerie-->
-								<a rel="ali" href="work/images/ali/ali-illu.jpg" class="swipebox"  title="Illustrations à l'aquarelle."></a>
-							</figure>
+							<div class="shadow-box">
+								<figure class="portfolio-item">
+									<a rel="ali" href="work/images/ali/ali-mes.jpg" class="swipebox"  title="">
+										<img id="preview" src="work/sqr/ali-sqr.jpg" alt="Item 1" class="img-responsive">
+										<!-- Caption -->
+											<div id="caption-switch" class="caption-box">
+												<span class="caption-text">
+													<h3 class="caption-title">Ali</h3>
+													<p class="caption-subtitle">Exercice d'illustration de couverture de livre.</p>
+												</span>
+											</div>
+										<!---->
+									</a>
+								<!--Gallerie-->
+									<a rel="ali" href="work/images/ali/ali-illu.jpg" class="swipebox"  title="Illustrations à l'aquarelle."></a>
+								</figure>
+							</div>
 						</li>
 						
 						<!--0bot-->
 						<li class="col-md-4 col-sm-4 col-xs-12" data-groups='["3d"]'>
-							<figure class="portfolio-item">
-								<a rel="0bot" href="work/images/0bot/bot3.jpg" class="swipebox"  title="Modélisation d'un personnage style cartoon.">
-									<img src="work/sqr/0bot-sqr.jpg" alt="Item 1" class="img-responsive">
-								</a>
-							<!--Gallerie-->
-								<a rel="0bot" href="work/images/0bot/bot1.jpg" class="swipebox"  title="Front View"></a>								
-								<a rel="0bot" href="work/images/0bot/bot2.jpg" class="swipebox"  title="Left View"></a>
-
-							</figure>
+							<div class="shadow-box">
+								<figure class="portfolio-item">
+									<a rel="0bot" href="work/images/0bot/bot3.jpg" class="swipebox"  title="">
+										<img id="preview" src="work/sqr/0bot-sqr.jpg" alt="Item 1" class="img-responsive">
+										<!-- Caption -->
+											<div id="caption-switch" class="caption-box">
+												<span class="caption-text">
+													<h3 class="caption-title">0-bot</h3>
+													<p class="caption-subtitle">Modélisation d'un personnage style cartoon.</p>
+												</span>
+											</div>
+										<!---->
+									</a>
+								<!--Gallerie-->
+									<a rel="0bot" href="work/images/0bot/bot1.jpg" class="swipebox"  title="Front View"></a>								
+									<a rel="0bot" href="work/images/0bot/bot2.jpg" class="swipebox"  title="Left View"></a>
+								</figure>
+							</div>
 						</li>
 						
 						<!--Murakami-->
 						<li class="col-md-4 col-sm-4 col-xs-12" data-groups='["graph"]'>
-							<figure class="portfolio-item">
-								<a rel="murakami" href="work/images/murakami/murakami4.jpg" class="swipebox"  title="Exercice de création d'une couverture de roman.">
-									<img src="work/sqr/murakami-sqr.jpg" alt="Item 1" class="img-responsive">
-								</a>
-							<!--Gallerie-->
-								<a rel="murakami" href="work/images/murakami/murakami1.jpg" class="swipebox"  title="Les amants du Spoutnik."></a>
-								<a rel="murakami" href="work/images/murakami/murakami2.jpg" class="swipebox"  title="Le passage de la nuit."></a>
-								<a rel="murakami" href="work/images/murakami/murakami3.jpg" class="swipebox"  title="Kafka sur le rivage."></a>
-							</figure>
+							<div class="shadow-box">
+								<figure class="portfolio-item">
+									<a rel="murakami" href="work/images/murakami/murakami4.jpg" class="swipebox"  title="">
+										<img id="preview" src="work/sqr/murakami-sqr.jpg" alt="Item 1" class="img-responsive">
+										<!-- Caption -->
+											<div id="caption-switch" class="caption-box">
+												<span class="caption-text">
+													<h3 class="caption-title">Murakami</h3>
+													<p class="caption-subtitle">Exercice de mise en page d'une couverture de livre.</p>
+												</span>
+											</div>
+										<!---->
+									</a>
+								<!--Gallerie-->
+									<a rel="murakami" href="work/images/murakami/murakami1.jpg" class="swipebox"  title="Les amants du Spoutnik."></a>
+									<a rel="murakami" href="work/images/murakami/murakami2.jpg" class="swipebox"  title="Le passage de la nuit."></a>
+									<a rel="murakami" href="work/images/murakami/murakami3.jpg" class="swipebox"  title="Kafka sur le rivage."></a>
+								</figure>
+							</div>
 						</li>
 						
 						<!--crate-->
 						<li class="col-md-4 col-sm-4 col-xs-12" data-groups='["3d"]'>
-							<figure class="portfolio-item">
-								<a rel="crate" href="work/images/crate/crate view.png" class="swipebox"  title="Modélisation d'une caisse style Sci-Fi.">
-									<img src="work/sqr/crate-sqr.jpg" alt="Item 1" class="img-responsive">
-								</a>
-							<!--Gallerie-->
-								<a rel="crate" href="work/images/crate/crate front.png" class="swipebox"  title="Front View"></a>								
-								<a rel="crate" href="work/images/crate/crate back.png" class="swipebox"  title="Back View"></a>
-
-							</figure>
+							<div class="shadow-box">
+								<figure class="portfolio-item">
+									<a rel="crate" href="work/images/crate/crate view.png" class="swipebox"  title="">
+										<img id="preview" src="work/sqr/crate-sqr.jpg" alt="Item 1" class="img-responsive">
+										<!-- Caption -->
+											<div id="caption-switch" class="caption-box">
+												<span class="caption-text">
+													<h3 class="caption-title">Crate</h3>
+													<p class="caption-subtitle">Modélisation d'une caisse style Sci-Fi.</p>
+												</span>
+											</div>
+										<!---->
+									</a>
+								<!--Gallerie-->
+									<a rel="crate" href="work/images/crate/crate front.png" class="swipebox"  title="Front View"></a>								
+									<a rel="crate" href="work/images/crate/crate back.png" class="swipebox"  title="Back View"></a>
+								</figure>
+							</div>
 						</li>
 						
 						<!--MC-->
 						<li class="col-md-4 col-sm-4 col-xs-12" data-groups='["graph"]'>
-							<figure class="portfolio-item">
-								<a rel="mc" href="work/images/mc/mc.jpg" class="swipebox"  title="Conception de logotype.">
-									<img src="work/images/mc/mc.jpg" alt="Item 1" class="img-responsive">
-								</a>
-							</figure>
+							<div class="shadow-box">
+								<figure class="portfolio-item">
+									<a rel="mc" href="work/images/mc/mc.jpg" class="swipebox"  title="">
+										<img id="preview" src="work/images/mc/mc.jpg" alt="Item 1" class="img-responsive">
+										<!-- Caption -->
+										<div id="caption-switch" class="caption-box">
+											<span class="caption-text">
+												<h3 class="caption-title">Monsieur Coupé</h3>
+												<p class="caption-subtitle">Conception de logotype pour un workshop HEC.</p>
+											</span>
+										</div>
+										<!---->
+									</a>
+								</figure>
+							</div>
 						</li>
 						
 						<!--HUD-->
 						<li class="col-md-4 col-sm-4 col-xs-12" data-groups='["game"]'>
-							<figure class="portfolio-item">
-								<a rel="hud" href="work/sqr/hud-sqr.jpg" class="swipebox"  title="Design d'une coque pour smartphone.">
-									<img src="work/sqr/hud-sqr.jpg" alt="Item 1" class="img-responsive">
-								</a>
-								<!--Gallerie-->
-								<a rel="hud" href="work/images/hud/Hud.jpg" class="swipebox"  title=""></a>
-							</figure>
+							<div class="shadow-box">
+								<figure class="portfolio-item">
+									<a rel="hud" href="work/sqr/hud-sqr.jpg" class="swipebox"  title="">
+										<img id="preview" src="work/sqr/hud-sqr.jpg" alt="Item 1" class="img-responsive">
+									<!-- Caption -->
+										<div id="caption-switch" class="caption-box">
+											<span class="caption-text">
+												<h3 class="caption-title">HUD</h3>
+												<p class="caption-subtitle">Exercice de conception d'un HUD.</p>
+											</span>
+										</div>
+									<!---->
+									</a>
+
+									<!--Gallerie-->
+									<a rel="hud" href="work/images/hud/Hud.jpg" class="swipebox"  title=""></a>
+								</figure>
+							</div>
 						</li>
 						
 						<!-- sizer -->
@@ -341,3 +527,5 @@
 
 	</body>
 </html>
+
+<!-- Portfolio codé par Florent Maillard : "This is not the best website in the world, this is just a tribute" -->
