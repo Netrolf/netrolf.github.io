@@ -46,7 +46,7 @@
         keyboard : true,
 
         // Should display navigation arrows at the screen edges
-        arrows : false,
+        arrows : true,
 
         // Should display infobar (counter and arrows at the top)
         infobar : false,

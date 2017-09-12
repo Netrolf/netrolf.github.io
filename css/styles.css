@@ -76,7 +76,6 @@ header
 	margin: 1%;
 	color: var(--myblue) !important;
 	font-size: var(--fontsize-logo);/*A CHANGER*/
-	animation: 1s ease-out 0.5s 1 FadeFromTop;
 }
 
 .logo h1
@@ -94,7 +93,6 @@ header
 
 .social-icons
 {
-	animation: 1s ease-out 0.5s 1 FadeFromTop;
 }
 
 .social-icons li
